@@ -15,6 +15,23 @@
 		6B8C6E8D1DF7324E00C00F0F /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6E8C1DF7324E00C00F0F /* BaseUIView.swift */; };
 		6B8C6E8F1DF7329000C00F0F /* BaseUIViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6E8E1DF7329000C00F0F /* BaseUIViewDelegate.swift */; };
 		6B8C6E911DF733A700C00F0F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6E901DF733A700C00F0F /* Types.swift */; };
+		6B8C6E991DF74FFF00C00F0F /* BaseRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6E971DF74FFF00C00F0F /* BaseRowView.swift */; };
+		6B8C6E9A1DF74FFF00C00F0F /* BaseRowViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6E981DF74FFF00C00F0F /* BaseRowViewDelegate.swift */; };
+		6B8C6E9C1DF7501100C00F0F /* BaseRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6E9B1DF7501100C00F0F /* BaseRowModel.swift */; };
+		6B8C6E9E1DF7505900C00F0F /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6E9D1DF7505900C00F0F /* LayoutHelper.swift */; };
+		6B8C6EA01DF7508500C00F0F /* BaseRowTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6E9F1DF7508500C00F0F /* BaseRowTVCell.swift */; };
+		6B8C6EA21DF7509D00C00F0F /* BaseRowTVCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EA11DF7509D00C00F0F /* BaseRowTVCellDelegate.swift */; };
+		6B8C6EA51DF750BC00C00F0F /* BaseRowUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EA31DF750BC00C00F0F /* BaseRowUITableView.swift */; };
+		6B8C6EA61DF750BC00C00F0F /* BaseRowUITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EA41DF750BC00C00F0F /* BaseRowUITableViewDelegate.swift */; };
+		6B8C6EAB1DF7662000C00F0F /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EA81DF7662000C00F0F /* BaseUIViewController.swift */; };
+		6B8C6EAC1DF7662000C00F0F /* BaseUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EA91DF7662000C00F0F /* BaseUINavigationController.swift */; };
+		6B8C6EAD1DF7662000C00F0F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EAA1DF7662000C00F0F /* BaseTableViewController.swift */; };
+		6B8C6EB21DF7751F00C00F0F /* BaseUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EB01DF7751F00C00F0F /* BaseUILabel.swift */; };
+		6B8C6EB31DF7751F00C00F0F /* BaseUILabelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EB11DF7751F00C00F0F /* BaseUILabelDelegate.swift */; };
+		6B8C6EB81DF7752A00C00F0F /* AttributeStringCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8C6EB41DF7752A00C00F0F /* AttributeStringCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B8C6EB91DF7752A00C00F0F /* AttributeStringCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EB51DF7752A00C00F0F /* AttributeStringCreator.m */; };
+		6B8C6EBA1DF7752A00C00F0F /* AttributeStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EB61DF7752A00C00F0F /* AttributeStringHelper.swift */; };
+		6B8C6EBB1DF7752A00C00F0F /* LabelInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EB71DF7752A00C00F0F /* LabelInformation.swift */; };
 		99A58E0CFFB0890460645C51 /* Pods_PodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFEEE5442AE92EF97E6955C /* Pods_PodUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +59,23 @@
 		6B8C6E8C1DF7324E00C00F0F /* BaseUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
 		6B8C6E8E1DF7329000C00F0F /* BaseUIViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIViewDelegate.swift; sourceTree = "<group>"; };
 		6B8C6E901DF733A700C00F0F /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		6B8C6E971DF74FFF00C00F0F /* BaseRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRowView.swift; sourceTree = "<group>"; };
+		6B8C6E981DF74FFF00C00F0F /* BaseRowViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRowViewDelegate.swift; sourceTree = "<group>"; };
+		6B8C6E9B1DF7501100C00F0F /* BaseRowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRowModel.swift; sourceTree = "<group>"; };
+		6B8C6E9D1DF7505900C00F0F /* LayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutHelper.swift; sourceTree = "<group>"; };
+		6B8C6E9F1DF7508500C00F0F /* BaseRowTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRowTVCell.swift; sourceTree = "<group>"; };
+		6B8C6EA11DF7509D00C00F0F /* BaseRowTVCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRowTVCellDelegate.swift; sourceTree = "<group>"; };
+		6B8C6EA31DF750BC00C00F0F /* BaseRowUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRowUITableView.swift; sourceTree = "<group>"; };
+		6B8C6EA41DF750BC00C00F0F /* BaseRowUITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRowUITableViewDelegate.swift; sourceTree = "<group>"; };
+		6B8C6EA81DF7662000C00F0F /* BaseUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
+		6B8C6EA91DF7662000C00F0F /* BaseUINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUINavigationController.swift; sourceTree = "<group>"; };
+		6B8C6EAA1DF7662000C00F0F /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		6B8C6EB01DF7751F00C00F0F /* BaseUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUILabel.swift; sourceTree = "<group>"; };
+		6B8C6EB11DF7751F00C00F0F /* BaseUILabelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUILabelDelegate.swift; sourceTree = "<group>"; };
+		6B8C6EB41DF7752A00C00F0F /* AttributeStringCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeStringCreator.h; sourceTree = "<group>"; };
+		6B8C6EB51DF7752A00C00F0F /* AttributeStringCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeStringCreator.m; sourceTree = "<group>"; };
+		6B8C6EB61DF7752A00C00F0F /* AttributeStringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeStringHelper.swift; sourceTree = "<group>"; };
+		6B8C6EB71DF7752A00C00F0F /* LabelInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelInformation.swift; sourceTree = "<group>"; };
 		7E27B1AD4AC89E746B25AF8E /* Pods-PodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodUITests/Pods-PodUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D62DB99D7535039717F8C8A4 /* Pods-PodUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodUI/Pods-PodUI.release.xcconfig"; sourceTree = "<group>"; };
 		D932A8F8CCA6DC9F2A7EE52B /* Pods-PodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodUITests/Pods-PodUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,10 +136,14 @@
 		6B8C6E6F1DF7309A00C00F0F /* PodUI */ = {
 			isa = PBXGroup;
 			children = (
+				6B8C6EAE1DF7750C00C00F0F /* Label */,
+				6B8C6EA71DF7660B00C00F0F /* Controller */,
+				6B8C6E921DF74FD100C00F0F /* Recycle */,
 				6B8C6E8B1DF7322100C00F0F /* Base */,
 				6B8C6E881DF731DC00C00F0F /* Image */,
 				6B8C6E701DF7309A00C00F0F /* PodUI.h */,
 				6B8C6E711DF7309A00C00F0F /* Info.plist */,
+				6B8C6E9D1DF7505900C00F0F /* LayoutHelper.swift */,
 				6B8C6E901DF733A700C00F0F /* Types.swift */,
 			);
 			path = PodUI;
@@ -137,6 +175,86 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		6B8C6E921DF74FD100C00F0F /* Recycle */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6EA31DF750BC00C00F0F /* BaseRowUITableView.swift */,
+				6B8C6EA41DF750BC00C00F0F /* BaseRowUITableViewDelegate.swift */,
+				6B8C6E931DF74FD100C00F0F /* Models */,
+				6B8C6E941DF74FD100C00F0F /* RecycleViewCells */,
+				6B8C6E951DF74FD100C00F0F /* TableViewCells */,
+				6B8C6E961DF74FD100C00F0F /* Views */,
+			);
+			name = Recycle;
+			path = Recycled;
+			sourceTree = "<group>";
+		};
+		6B8C6E931DF74FD100C00F0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6E9B1DF7501100C00F0F /* BaseRowModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6B8C6E941DF74FD100C00F0F /* RecycleViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = RecycleViewCells;
+			path = RecycleView;
+			sourceTree = "<group>";
+		};
+		6B8C6E951DF74FD100C00F0F /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6EA11DF7509D00C00F0F /* BaseRowTVCellDelegate.swift */,
+				6B8C6E9F1DF7508500C00F0F /* BaseRowTVCell.swift */,
+			);
+			name = TableViewCells;
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		6B8C6E961DF74FD100C00F0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6E971DF74FFF00C00F0F /* BaseRowView.swift */,
+				6B8C6E981DF74FFF00C00F0F /* BaseRowViewDelegate.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B8C6EA71DF7660B00C00F0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6EA81DF7662000C00F0F /* BaseUIViewController.swift */,
+				6B8C6EA91DF7662000C00F0F /* BaseUINavigationController.swift */,
+				6B8C6EAA1DF7662000C00F0F /* BaseTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6B8C6EAE1DF7750C00C00F0F /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6EB01DF7751F00C00F0F /* BaseUILabel.swift */,
+				6B8C6EB11DF7751F00C00F0F /* BaseUILabelDelegate.swift */,
+				6B8C6EAF1DF7751700C00F0F /* helper */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		6B8C6EAF1DF7751700C00F0F /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				6B8C6EB41DF7752A00C00F0F /* AttributeStringCreator.h */,
+				6B8C6EB51DF7752A00C00F0F /* AttributeStringCreator.m */,
+				6B8C6EB61DF7752A00C00F0F /* AttributeStringHelper.swift */,
+				6B8C6EB71DF7752A00C00F0F /* LabelInformation.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
 		7BAA57A486CAB2D6E756E59E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B8C6E7E1DF7309A00C00F0F /* PodUI.h in Headers */,
+				6B8C6EB81DF7752A00C00F0F /* AttributeStringCreator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,9 +462,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B8C6E8F1DF7329000C00F0F /* BaseUIViewDelegate.swift in Sources */,
+				6B8C6E9A1DF74FFF00C00F0F /* BaseRowViewDelegate.swift in Sources */,
+				6B8C6EB91DF7752A00C00F0F /* AttributeStringCreator.m in Sources */,
+				6B8C6EA21DF7509D00C00F0F /* BaseRowTVCellDelegate.swift in Sources */,
+				6B8C6EBA1DF7752A00C00F0F /* AttributeStringHelper.swift in Sources */,
+				6B8C6EA51DF750BC00C00F0F /* BaseRowUITableView.swift in Sources */,
+				6B8C6EA61DF750BC00C00F0F /* BaseRowUITableViewDelegate.swift in Sources */,
+				6B8C6EB31DF7751F00C00F0F /* BaseUILabelDelegate.swift in Sources */,
+				6B8C6EB21DF7751F00C00F0F /* BaseUILabel.swift in Sources */,
+				6B8C6E9C1DF7501100C00F0F /* BaseRowModel.swift in Sources */,
+				6B8C6E9E1DF7505900C00F0F /* LayoutHelper.swift in Sources */,
+				6B8C6EA01DF7508500C00F0F /* BaseRowTVCell.swift in Sources */,
 				6B8C6E8A1DF731E800C00F0F /* BaseUIImageView.swift in Sources */,
 				6B8C6E8D1DF7324E00C00F0F /* BaseUIView.swift in Sources */,
+				6B8C6E991DF74FFF00C00F0F /* BaseRowView.swift in Sources */,
 				6B8C6E911DF733A700C00F0F /* Types.swift in Sources */,
+				6B8C6EAD1DF7662000C00F0F /* BaseTableViewController.swift in Sources */,
+				6B8C6EAC1DF7662000C00F0F /* BaseUINavigationController.swift in Sources */,
+				6B8C6EAB1DF7662000C00F0F /* BaseUIViewController.swift in Sources */,
+				6B8C6EBB1DF7752A00C00F0F /* LabelInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +521,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -439,6 +575,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

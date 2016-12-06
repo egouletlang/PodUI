@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
 
   s.name         = "PodUI"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "PodUI classes"
   s.description  = <<-DESC
   A bunch of classes i have found useful for PodUI
@@ -20,7 +20,8 @@ Pod::Spec.new do |s|
   s.source_files  = "PodUI", "PodUI/**/*.{h,m}", "PodUI/**/*.{swift}"
   s.exclude_files = "Classes/Exclude"
 
-  s.dependency 'BaseUtils', 'PodImage'
+  s.dependency 'BaseUtils'
+  s.dependency 'PodImage'
 
 end
 

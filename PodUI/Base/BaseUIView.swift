@@ -12,6 +12,23 @@ import BaseUtils
 /// The base UIView relies on updating the component's frame. There is no support of constraints.
 open class BaseUIView: UIView {
     
+    // MARK: - FirstResponder -
+    
+    private var mayResign = true
+    func setDisallowResign() {
+        mayResign = false
+    }
+    
+    func setAllowResign() {
+        mayResign = true
+    }
+    
+    override open var canResignFirstResponder: Bool {
+        get {
+            return mayResign
+        }
+    }
+    
     // MARK: - Constructors -
     public init() {
         super.init(frame: CGRect.zero)

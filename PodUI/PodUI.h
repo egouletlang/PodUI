@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AttributeStringCreator.h"
 
 //! Project version number for PodUI.
 FOUNDATION_EXPORT double PodUIVersionNumber;
