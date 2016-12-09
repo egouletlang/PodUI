@@ -108,7 +108,6 @@ class OverlayUINavigationController: BaseUINavigationController, UIViewControlle
         cleanUp()
     }
     func cleanUp() {
-        let vcs = self.viewControllers
         self.servicePresentationControllerLayout = nil
     }
     

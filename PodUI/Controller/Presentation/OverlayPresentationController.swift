@@ -32,7 +32,7 @@ class PresentationBackgroundBlurView: BaseUIView {
     
     private func createBlurBackground() -> UIVisualEffectView {
         let ret = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-        let tapGesture = UITapGestureRecognizer(target: self, action: "dimClicked")
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(PresentationBackgroundBlurView.dimClicked))
         tapGesture.numberOfTapsRequired = 1
         ret.isUserInteractionEnabled = true
         ret.addGestureRecognizer(tapGesture)
@@ -74,7 +74,7 @@ class OverlayPresentationController: UIPresentationController, PresentationBackg
     private func createBlurBackground() -> UIVisualEffectView {
         
         let ret = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-        let tapGesture = UITapGestureRecognizer(target: self, action: "dimClicked")
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(PresentationBackgroundBlurView.dimClicked))
         tapGesture.numberOfTapsRequired = 1
         ret.isUserInteractionEnabled = true
         ret.addGestureRecognizer(tapGesture)
