@@ -51,6 +51,7 @@ open class BaseUINavigationController: UINavigationController {
     
     override open func viewDidLoad() {
         super.viewDidLoad()
+        self.automaticallyAdjustsScrollViewInsets = false
         
         if let views = self.getViews() {
             self.navigationBar.isTranslucent = true

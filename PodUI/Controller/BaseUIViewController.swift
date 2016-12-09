@@ -44,24 +44,23 @@ open class BaseUIViewController: UIViewController, BaseUIViewDelegate {
     // MARK: - Layout Information -
     fileprivate var currSize = CGSize.zero
     fileprivate var topLayout: CGFloat = 0
-    var navBarHeight: CGFloat {
+    open var navBarHeight: CGFloat {
         get { return BaseUIViewController.NavBarHeight }
     }
-    var statusBarHeight: CGFloat {
+    open var statusBarHeight: CGFloat {
         get { return BaseUIViewController.StatusBarHeight }
     }
-    var effectiveTopLayoutGuide: CGFloat {
+    open var effectiveTopLayoutGuide: CGFloat {
         get {
             return navBarHeight + statusBarHeight
         }
     }
-    
-    var effectiveBottomLayoutGuide: CGFloat {
+    open var effectiveBottomLayoutGuide: CGFloat {
         get {
             return self.view.frame.height
         }
     }
-    var isPortraitMode: Bool {
+    open var isPortraitMode: Bool {
         get {
             // Don't use UIDevice.currentDevice().orientation as that seems to sometimes be wrong ?!
             let orientation = UIApplication.shared.statusBarOrientation
@@ -96,8 +95,6 @@ open class BaseUIViewController: UIViewController, BaseUIViewDelegate {
         if !layoutCreated {
             self.automaticallyAdjustsScrollViewInsets = false
             self.view.backgroundColor = defaultBackgroundColor()
-            print("\(self.navigationController?.viewControllers.count)")
-            
             if addDismissButton() && (self.navigationController?.viewControllers.count == 1) {
                 self.setNavigationItem(text: "Cancel", target: self, selector: #selector(BaseUIViewController.dismissVC), left: true)
             }
@@ -117,36 +114,24 @@ open class BaseUIViewController: UIViewController, BaseUIViewDelegate {
         self.didAppear(first: hasAppearedBefore)
     }
     
-    func initialize() {}
-    func createLayout() {
+    open func initialize() {}
+    open func createLayout() {
         layoutCreated = true
     }
-    func firstWillAppear() {}
-    func didAppear(first: Bool) {}
-    func frameUpdate() {}
-    func defaultBackgroundColor() -> UIColor {
+    open func firstWillAppear() {}
+    open func didAppear(first: Bool) {}
+    open func frameUpdate() {}
+    open func defaultBackgroundColor() -> UIColor {
         return UIColor.clear
     }
     
     
     // MARK: - Foreground Event -
-    func isVisible() -> Bool {
+    open func isVisible() -> Bool {
         return (self.view.window != nil &&
             self.isViewLoaded &&
             UIApplication.shared.applicationState == .active)
     }
-    func foregroundEvent() {
-        if self.isVisible() {
-            foregroundEventAndIsVisible()
-        }
-    }
-    func login() {
-        
-    }
-    func logout() {
-        
-    }
-    func foregroundEventAndIsVisible() {}
     
     // MARK: - BaseUIViewDelegate -
     public func presentVC(_ vc: UIViewController, animated: Bool) {
@@ -172,7 +157,7 @@ open class BaseUIViewController: UIViewController, BaseUIViewDelegate {
         return 13
     }
     
-    func setNavigationItem(text: String?, target: AnyObject?, selector: Selector, left: Bool, font: UIFont? = nil) {
+    open func setNavigationItem(text: String?, target: AnyObject?, selector: Selector, left: Bool, font: UIFont? = nil) {
         if let t = text {
             let button = UIBarButtonItem(title: t, style: UIBarButtonItemStyle.plain, target: target ?? self, action: selector)
             button.setTitleTextAttributes([NSFontAttributeName: font ?? tabbarItemFont()], for: UIControlState())
@@ -185,7 +170,7 @@ open class BaseUIViewController: UIViewController, BaseUIViewDelegate {
         }
     }
     
-    func setNavigationItem(res: String?, target: AnyObject?, action: Selector, left: Bool) {
+    open func setNavigationItem(res: String?, target: AnyObject?, action: Selector, left: Bool) {
         if let r = res, let image = UIImage(named: r) {
             
             let button = PresentationHelper.buildNavBarButton(image, target: target, action: action)
@@ -201,7 +186,7 @@ open class BaseUIViewController: UIViewController, BaseUIViewDelegate {
         }
     }
     
-    func setNavigationItem(_ image: UIImage?, target: AnyObject?, action: Selector,  tintColor: UIColor?, left: Bool) {
+    open func setNavigationItem(_ image: UIImage?, target: AnyObject?, action: Selector,  tintColor: UIColor?, left: Bool) {
         if let i = image {
             
             let button = PresentationHelper.buildNavBarButton(i, target: target, action: action)
@@ -216,7 +201,7 @@ open class BaseUIViewController: UIViewController, BaseUIViewDelegate {
         }
     }
     
-    func addDismissButton() -> Bool {
+    open func addDismissButton() -> Bool {
         return true
     }
 }

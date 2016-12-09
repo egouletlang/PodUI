@@ -10,7 +10,7 @@ import Foundation
 import CoreGraphics
 import UIKit
 
-private let DEFAULT_PADDING = Rect<CGFloat>(10, 0, 10, 0)
+private let DEFAULT_PADDING = Rect<CGFloat>(10, 10, 10, 10)
 
 open class BaseRowModel: NSObject {
     

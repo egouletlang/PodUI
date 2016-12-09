@@ -82,6 +82,13 @@ open class BaseRowUITableView: UITableView, UITableViewDataSource, UITableViewDe
             }
 
         }
+        for m in allModels {
+            if m.measureHeight {
+                let cell = BaseRowTVCell.build(id: m.getId(), width: self.frame.width)
+                m.height = cell.getDesiredSize(model: m, forWidth: self.frame.width).height
+            }
+            
+        }
         self.reloadData()
     }
     open func frameHeightChanged() {}
@@ -121,6 +128,7 @@ open class BaseRowUITableView: UITableView, UITableViewDataSource, UITableViewDe
             if m.height == 0 && m.measureHeight {
                 let cell = BaseRowTVCell.build(id: m.getId(), width: self.frame.width)
                 m.height = cell.getDesiredSize(model: m, forWidth: self.frame.width).height
+                print(m.height)
             }
         }
     }
@@ -155,6 +163,7 @@ open class BaseRowUITableView: UITableView, UITableViewDataSource, UITableViewDe
         }
     }
     open func setModels(models: [BaseRowModel]) {
+        self.correctSizes(models: models)
         ThreadHelper.checkedExecuteOnMainThread() {
             // Ensure we modify models and UI in the same thread
             self.allModels = models
@@ -162,13 +171,14 @@ open class BaseRowUITableView: UITableView, UITableViewDataSource, UITableViewDe
         }
     }
     open func appendModels(models: [BaseRowModel]) {
+        self.correctSizes(models: models)
         ThreadHelper.checkedExecuteOnMainThread() {
             self.allModels.append(contentsOf: models)
             self.filter(scope: self.currScope, text: self.currSearch)
         }
     }
     open func replaceModel(model: BaseRowModel, newModels: [BaseRowModel], withAnimations: UITableViewRowAnimation? = nil) {
-        
+        self.correctSizes(models: newModels)
         if let index = self.allModels.index(of: model) {
             var indices = [Int]()
             for i in 0 ..< newModels.count {
@@ -346,13 +356,13 @@ open class BaseRowUITableView: UITableView, UITableViewDataSource, UITableViewDe
         
         var result = self.allModels
         
-        if let s = scope {
+        if let s = scope, s != "All" {
             let scopePredicate = NSPredicate(format: "((scope == %@) AND (scope != %@)) OR (scope == %@)",
                                              argumentArray: [s, BaseRowModel.NO_SCOPE, BaseRowModel.ANY_SCOPE])
             result = NSArray(array: result).filtered(using: scopePredicate) as! [BaseRowModel]
         }
         
-        if let t = text {
+        if let t = text, !t.isEmpty {
             let scopePredicate = NSPredicate(format: "((searchable == %@) AND (searchable != %@)) OR (searchable == %@)",
                                              argumentArray: [t, BaseRowModel.NO_QUERY, BaseRowModel.ANY_QUERY])
             result = NSArray(array: result).filtered(using: scopePredicate) as! [BaseRowModel]

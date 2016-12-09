@@ -17,6 +17,8 @@ open class BaseUIImageView: BaseUIView {
     override open func createAndAddSubviews() {
         super.createAndAddSubviews()
         self.addSubview(imageView)
+        imageView.contentMode = .scaleAspectFill
+        self.clipsToBounds = true
     }
     override open func frameUpdate() {
         super.frameUpdate()

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2F5D1B530898598D89A3ADF4 /* Pods_PodUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C0CC44B521D0F017CD4867 /* Pods_PodUI.framework */; };
+		6B5575691DF7A6450045F31A /* AsynchronousRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5575671DF7A6450045F31A /* AsynchronousRowModel.swift */; };
+		6B55756A1DF7A6450045F31A /* GenericLabelRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5575681DF7A6450045F31A /* GenericLabelRowModel.swift */; };
+		6B55756D1DF7A6520045F31A /* AsynchronousRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55756B1DF7A6520045F31A /* AsynchronousRowView.swift */; };
+		6B55756E1DF7A6520045F31A /* GenericLabelRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55756C1DF7A6520045F31A /* GenericLabelRowView.swift */; };
+		6B5575711DF7A65E0045F31A /* AsynchronousRowTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55756F1DF7A65E0045F31A /* AsynchronousRowTVCell.swift */; };
+		6B5575721DF7A65E0045F31A /* GenericLabelRowTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5575701DF7A65E0045F31A /* GenericLabelRowTVCell.swift */; };
 		6B8C6E771DF7309A00C00F0F /* PodUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8C6E6D1DF7309A00C00F0F /* PodUI.framework */; };
 		6B8C6E7C1DF7309A00C00F0F /* PodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6E7B1DF7309A00C00F0F /* PodUITests.swift */; };
 		6B8C6E7E1DF7309A00C00F0F /* PodUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8C6E701DF7309A00C00F0F /* PodUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,10 +34,39 @@
 		6B8C6EAD1DF7662000C00F0F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EAA1DF7662000C00F0F /* BaseTableViewController.swift */; };
 		6B8C6EB21DF7751F00C00F0F /* BaseUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EB01DF7751F00C00F0F /* BaseUILabel.swift */; };
 		6B8C6EB31DF7751F00C00F0F /* BaseUILabelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EB11DF7751F00C00F0F /* BaseUILabelDelegate.swift */; };
-		6B8C6EB81DF7752A00C00F0F /* AttributeStringCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8C6EB41DF7752A00C00F0F /* AttributeStringCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B8C6EB91DF7752A00C00F0F /* AttributeStringCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EB51DF7752A00C00F0F /* AttributeStringCreator.m */; };
-		6B8C6EBA1DF7752A00C00F0F /* AttributeStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EB61DF7752A00C00F0F /* AttributeStringHelper.swift */; };
-		6B8C6EBB1DF7752A00C00F0F /* LabelInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EB71DF7752A00C00F0F /* LabelInformation.swift */; };
+		6B8C6EBD1DF776C600C00F0F /* LabelRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EBC1DF776C600C00F0F /* LabelRowView.swift */; };
+		6B8C6EBF1DF776E800C00F0F /* LabelRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EBE1DF776E800C00F0F /* LabelRowModel.swift */; };
+		6B8C6EC11DF7770C00C00F0F /* LabelRowTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EC01DF7770C00C00F0F /* LabelRowTVCell.swift */; };
+		6BFBC40C1DFA4A6C005E9CF2 /* AttributeStringCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFBC4071DFA4A6C005E9CF2 /* AttributeStringCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BFBC40D1DFA4A6C005E9CF2 /* AttributeStringCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4081DFA4A6C005E9CF2 /* AttributeStringCreator.m */; };
+		6BFBC40E1DFA4A6C005E9CF2 /* AttributeStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4091DFA4A6C005E9CF2 /* AttributeStringHelper.swift */; };
+		6BFBC40F1DFA4A6C005E9CF2 /* EXT_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC40A1DFA4A6C005E9CF2 /* EXT_String.swift */; };
+		6BFBC4101DFA4A6C005E9CF2 /* LabelInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC40B1DFA4A6C005E9CF2 /* LabelInformation.swift */; };
+		6BFBC4121DFA4AAC005E9CF2 /* ImageLabelRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4111DFA4AAC005E9CF2 /* ImageLabelRowModel.swift */; };
+		6BFBC4141DFA4B73005E9CF2 /* ImageLabelRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4131DFA4B73005E9CF2 /* ImageLabelRowView.swift */; };
+		6BFBC4161DFA4CF3005E9CF2 /* ImageLabelRowTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4151DFA4CF3005E9CF2 /* ImageLabelRowTVCell.swift */; };
+		6BFBC4181DFA530A005E9CF2 /* CardRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4171DFA530A005E9CF2 /* CardRowModel.swift */; };
+		6BFBC41A1DFA5668005E9CF2 /* CardRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4191DFA5668005E9CF2 /* CardRowView.swift */; };
+		6BFBC41C1DFA586C005E9CF2 /* CardRowTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC41B1DFA586C005E9CF2 /* CardRowTVCell.swift */; };
+		6BFBC41E1DFA8FC4005E9CF2 /* ImageRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC41D1DFA8FC4005E9CF2 /* ImageRowModel.swift */; };
+		6BFBC4201DFA9179005E9CF2 /* ImageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC41F1DFA9179005E9CF2 /* ImageRowView.swift */; };
+		6BFBC4221DFA93F9005E9CF2 /* ImageRowTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4211DFA93F9005E9CF2 /* ImageRowTVCell.swift */; };
+		6BFBC4241DFA9726005E9CF2 /* CarouselRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4231DFA9726005E9CF2 /* CarouselRowModel.swift */; };
+		6BFBC4261DFA9A56005E9CF2 /* BaseUICollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4251DFA9A56005E9CF2 /* BaseUICollectionViewFlowLayout.swift */; };
+		6BFBC4281DFA9A85005E9CF2 /* BaseUICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4271DFA9A85005E9CF2 /* BaseUICollectionView.swift */; };
+		6BFBC42A1DFA9ABF005E9CF2 /* CarouselRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4291DFA9ABF005E9CF2 /* CarouselRowView.swift */; };
+		6BFBC42C1DFA9B91005E9CF2 /* BaseRowCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC42B1DFA9B91005E9CF2 /* BaseRowCVCell.swift */; };
+		6BFBC42E1DFA9F75005E9CF2 /* BaseRowCVCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC42D1DFA9F75005E9CF2 /* BaseRowCVCellDelegate.swift */; };
+		6BFBC4301DFAA61B005E9CF2 /* GenericLabelRowCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC42F1DFAA61B005E9CF2 /* GenericLabelRowCVCell.swift */; };
+		6BFBC4321DFAA66F005E9CF2 /* LabelRowCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4311DFAA66F005E9CF2 /* LabelRowCVCell.swift */; };
+		6BFBC4341DFAA683005E9CF2 /* ImageLabelRowCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4331DFAA683005E9CF2 /* ImageLabelRowCVCell.swift */; };
+		6BFBC4361DFAA69E005E9CF2 /* CardRowCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4351DFAA69E005E9CF2 /* CardRowCVCell.swift */; };
+		6BFBC4381DFAA6C3005E9CF2 /* ImageRowCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4371DFAA6C3005E9CF2 /* ImageRowCVCell.swift */; };
+		6BFBC43A1DFAAB0B005E9CF2 /* CarouselRowTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4391DFAAB0B005E9CF2 /* CarouselRowTVCell.swift */; };
+		6BFBC4401DFB1E1C005E9CF2 /* OverlayPresentationUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC43C1DFB1E1C005E9CF2 /* OverlayPresentationUIViewController.swift */; };
+		6BFBC4411DFB1E1C005E9CF2 /* OverlayPresentationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC43D1DFB1E1C005E9CF2 /* OverlayPresentationAnimationController.swift */; };
+		6BFBC4421DFB1E1C005E9CF2 /* OverlayPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC43E1DFB1E1C005E9CF2 /* OverlayPresentationController.swift */; };
+		6BFBC4431DFB1E1C005E9CF2 /* OverlayUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC43F1DFB1E1C005E9CF2 /* OverlayUINavigationController.swift */; };
 		99A58E0CFFB0890460645C51 /* Pods_PodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFEEE5442AE92EF97E6955C /* Pods_PodUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +84,12 @@
 		11C0CC44B521D0F017CD4867 /* Pods_PodUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFEEE5442AE92EF97E6955C /* Pods_PodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		591D9C9269B9A5C42F8F0301 /* Pods-PodUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodUI/Pods-PodUI.debug.xcconfig"; sourceTree = "<group>"; };
+		6B5575671DF7A6450045F31A /* AsynchronousRowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousRowModel.swift; sourceTree = "<group>"; };
+		6B5575681DF7A6450045F31A /* GenericLabelRowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericLabelRowModel.swift; sourceTree = "<group>"; };
+		6B55756B1DF7A6520045F31A /* AsynchronousRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousRowView.swift; sourceTree = "<group>"; };
+		6B55756C1DF7A6520045F31A /* GenericLabelRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericLabelRowView.swift; sourceTree = "<group>"; };
+		6B55756F1DF7A65E0045F31A /* AsynchronousRowTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousRowTVCell.swift; sourceTree = "<group>"; };
+		6B5575701DF7A65E0045F31A /* GenericLabelRowTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericLabelRowTVCell.swift; sourceTree = "<group>"; };
 		6B8C6E6D1DF7309A00C00F0F /* PodUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PodUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8C6E701DF7309A00C00F0F /* PodUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodUI.h; sourceTree = "<group>"; };
 		6B8C6E711DF7309A00C00F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,10 +113,39 @@
 		6B8C6EAA1DF7662000C00F0F /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		6B8C6EB01DF7751F00C00F0F /* BaseUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUILabel.swift; sourceTree = "<group>"; };
 		6B8C6EB11DF7751F00C00F0F /* BaseUILabelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUILabelDelegate.swift; sourceTree = "<group>"; };
-		6B8C6EB41DF7752A00C00F0F /* AttributeStringCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeStringCreator.h; sourceTree = "<group>"; };
-		6B8C6EB51DF7752A00C00F0F /* AttributeStringCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeStringCreator.m; sourceTree = "<group>"; };
-		6B8C6EB61DF7752A00C00F0F /* AttributeStringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeStringHelper.swift; sourceTree = "<group>"; };
-		6B8C6EB71DF7752A00C00F0F /* LabelInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelInformation.swift; sourceTree = "<group>"; };
+		6B8C6EBC1DF776C600C00F0F /* LabelRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelRowView.swift; sourceTree = "<group>"; };
+		6B8C6EBE1DF776E800C00F0F /* LabelRowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelRowModel.swift; sourceTree = "<group>"; };
+		6B8C6EC01DF7770C00C00F0F /* LabelRowTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelRowTVCell.swift; sourceTree = "<group>"; };
+		6BFBC4071DFA4A6C005E9CF2 /* AttributeStringCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeStringCreator.h; sourceTree = "<group>"; };
+		6BFBC4081DFA4A6C005E9CF2 /* AttributeStringCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeStringCreator.m; sourceTree = "<group>"; };
+		6BFBC4091DFA4A6C005E9CF2 /* AttributeStringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeStringHelper.swift; sourceTree = "<group>"; };
+		6BFBC40A1DFA4A6C005E9CF2 /* EXT_String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXT_String.swift; sourceTree = "<group>"; };
+		6BFBC40B1DFA4A6C005E9CF2 /* LabelInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelInformation.swift; sourceTree = "<group>"; };
+		6BFBC4111DFA4AAC005E9CF2 /* ImageLabelRowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLabelRowModel.swift; sourceTree = "<group>"; };
+		6BFBC4131DFA4B73005E9CF2 /* ImageLabelRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLabelRowView.swift; sourceTree = "<group>"; };
+		6BFBC4151DFA4CF3005E9CF2 /* ImageLabelRowTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLabelRowTVCell.swift; sourceTree = "<group>"; };
+		6BFBC4171DFA530A005E9CF2 /* CardRowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardRowModel.swift; sourceTree = "<group>"; };
+		6BFBC4191DFA5668005E9CF2 /* CardRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardRowView.swift; sourceTree = "<group>"; };
+		6BFBC41B1DFA586C005E9CF2 /* CardRowTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardRowTVCell.swift; sourceTree = "<group>"; };
+		6BFBC41D1DFA8FC4005E9CF2 /* ImageRowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRowModel.swift; sourceTree = "<group>"; };
+		6BFBC41F1DFA9179005E9CF2 /* ImageRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRowView.swift; sourceTree = "<group>"; };
+		6BFBC4211DFA93F9005E9CF2 /* ImageRowTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRowTVCell.swift; sourceTree = "<group>"; };
+		6BFBC4231DFA9726005E9CF2 /* CarouselRowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselRowModel.swift; sourceTree = "<group>"; };
+		6BFBC4251DFA9A56005E9CF2 /* BaseUICollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUICollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		6BFBC4271DFA9A85005E9CF2 /* BaseUICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUICollectionView.swift; sourceTree = "<group>"; };
+		6BFBC4291DFA9ABF005E9CF2 /* CarouselRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselRowView.swift; sourceTree = "<group>"; };
+		6BFBC42B1DFA9B91005E9CF2 /* BaseRowCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRowCVCell.swift; sourceTree = "<group>"; };
+		6BFBC42D1DFA9F75005E9CF2 /* BaseRowCVCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRowCVCellDelegate.swift; sourceTree = "<group>"; };
+		6BFBC42F1DFAA61B005E9CF2 /* GenericLabelRowCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericLabelRowCVCell.swift; sourceTree = "<group>"; };
+		6BFBC4311DFAA66F005E9CF2 /* LabelRowCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelRowCVCell.swift; sourceTree = "<group>"; };
+		6BFBC4331DFAA683005E9CF2 /* ImageLabelRowCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLabelRowCVCell.swift; sourceTree = "<group>"; };
+		6BFBC4351DFAA69E005E9CF2 /* CardRowCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardRowCVCell.swift; sourceTree = "<group>"; };
+		6BFBC4371DFAA6C3005E9CF2 /* ImageRowCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRowCVCell.swift; sourceTree = "<group>"; };
+		6BFBC4391DFAAB0B005E9CF2 /* CarouselRowTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselRowTVCell.swift; sourceTree = "<group>"; };
+		6BFBC43C1DFB1E1C005E9CF2 /* OverlayPresentationUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPresentationUIViewController.swift; sourceTree = "<group>"; };
+		6BFBC43D1DFB1E1C005E9CF2 /* OverlayPresentationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPresentationAnimationController.swift; sourceTree = "<group>"; };
+		6BFBC43E1DFB1E1C005E9CF2 /* OverlayPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPresentationController.swift; sourceTree = "<group>"; };
+		6BFBC43F1DFB1E1C005E9CF2 /* OverlayUINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayUINavigationController.swift; sourceTree = "<group>"; };
 		7E27B1AD4AC89E746B25AF8E /* Pods-PodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodUITests/Pods-PodUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D62DB99D7535039717F8C8A4 /* Pods-PodUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodUI/Pods-PodUI.release.xcconfig"; sourceTree = "<group>"; };
 		D932A8F8CCA6DC9F2A7EE52B /* Pods-PodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodUITests/Pods-PodUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +248,8 @@
 		6B8C6E921DF74FD100C00F0F /* Recycle */ = {
 			isa = PBXGroup;
 			children = (
+				6BFBC4271DFA9A85005E9CF2 /* BaseUICollectionView.swift */,
+				6BFBC4251DFA9A56005E9CF2 /* BaseUICollectionViewFlowLayout.swift */,
 				6B8C6EA31DF750BC00C00F0F /* BaseRowUITableView.swift */,
 				6B8C6EA41DF750BC00C00F0F /* BaseRowUITableViewDelegate.swift */,
 				6B8C6E931DF74FD100C00F0F /* Models */,
@@ -192,7 +264,14 @@
 		6B8C6E931DF74FD100C00F0F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6B5575671DF7A6450045F31A /* AsynchronousRowModel.swift */,
+				6B5575681DF7A6450045F31A /* GenericLabelRowModel.swift */,
 				6B8C6E9B1DF7501100C00F0F /* BaseRowModel.swift */,
+				6B8C6EBE1DF776E800C00F0F /* LabelRowModel.swift */,
+				6BFBC4111DFA4AAC005E9CF2 /* ImageLabelRowModel.swift */,
+				6BFBC4171DFA530A005E9CF2 /* CardRowModel.swift */,
+				6BFBC41D1DFA8FC4005E9CF2 /* ImageRowModel.swift */,
+				6BFBC4231DFA9726005E9CF2 /* CarouselRowModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,6 +279,13 @@
 		6B8C6E941DF74FD100C00F0F /* RecycleViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				6BFBC42B1DFA9B91005E9CF2 /* BaseRowCVCell.swift */,
+				6BFBC42D1DFA9F75005E9CF2 /* BaseRowCVCellDelegate.swift */,
+				6BFBC42F1DFAA61B005E9CF2 /* GenericLabelRowCVCell.swift */,
+				6BFBC4311DFAA66F005E9CF2 /* LabelRowCVCell.swift */,
+				6BFBC4331DFAA683005E9CF2 /* ImageLabelRowCVCell.swift */,
+				6BFBC4351DFAA69E005E9CF2 /* CardRowCVCell.swift */,
+				6BFBC4371DFAA6C3005E9CF2 /* ImageRowCVCell.swift */,
 			);
 			name = RecycleViewCells;
 			path = RecycleView;
@@ -208,8 +294,15 @@
 		6B8C6E951DF74FD100C00F0F /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				6B55756F1DF7A65E0045F31A /* AsynchronousRowTVCell.swift */,
+				6B5575701DF7A65E0045F31A /* GenericLabelRowTVCell.swift */,
 				6B8C6EA11DF7509D00C00F0F /* BaseRowTVCellDelegate.swift */,
 				6B8C6E9F1DF7508500C00F0F /* BaseRowTVCell.swift */,
+				6B8C6EC01DF7770C00C00F0F /* LabelRowTVCell.swift */,
+				6BFBC4151DFA4CF3005E9CF2 /* ImageLabelRowTVCell.swift */,
+				6BFBC41B1DFA586C005E9CF2 /* CardRowTVCell.swift */,
+				6BFBC4211DFA93F9005E9CF2 /* ImageRowTVCell.swift */,
+				6BFBC4391DFAAB0B005E9CF2 /* CarouselRowTVCell.swift */,
 			);
 			name = TableViewCells;
 			path = TableView;
@@ -218,8 +311,15 @@
 		6B8C6E961DF74FD100C00F0F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6B55756B1DF7A6520045F31A /* AsynchronousRowView.swift */,
+				6B55756C1DF7A6520045F31A /* GenericLabelRowView.swift */,
 				6B8C6E971DF74FFF00C00F0F /* BaseRowView.swift */,
 				6B8C6E981DF74FFF00C00F0F /* BaseRowViewDelegate.swift */,
+				6B8C6EBC1DF776C600C00F0F /* LabelRowView.swift */,
+				6BFBC4131DFA4B73005E9CF2 /* ImageLabelRowView.swift */,
+				6BFBC4191DFA5668005E9CF2 /* CardRowView.swift */,
+				6BFBC41F1DFA9179005E9CF2 /* ImageRowView.swift */,
+				6BFBC4291DFA9ABF005E9CF2 /* CarouselRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,6 +327,7 @@
 		6B8C6EA71DF7660B00C00F0F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6BFBC43B1DFB1E16005E9CF2 /* Presentation */,
 				6B8C6EA81DF7662000C00F0F /* BaseUIViewController.swift */,
 				6B8C6EA91DF7662000C00F0F /* BaseUINavigationController.swift */,
 				6B8C6EAA1DF7662000C00F0F /* BaseTableViewController.swift */,
@@ -239,20 +340,32 @@
 			children = (
 				6B8C6EB01DF7751F00C00F0F /* BaseUILabel.swift */,
 				6B8C6EB11DF7751F00C00F0F /* BaseUILabelDelegate.swift */,
-				6B8C6EAF1DF7751700C00F0F /* helper */,
+				6BFBC4061DFA4A6C005E9CF2 /* helper */,
 			);
 			path = Label;
 			sourceTree = "<group>";
 		};
-		6B8C6EAF1DF7751700C00F0F /* helper */ = {
+		6BFBC4061DFA4A6C005E9CF2 /* helper */ = {
 			isa = PBXGroup;
 			children = (
-				6B8C6EB41DF7752A00C00F0F /* AttributeStringCreator.h */,
-				6B8C6EB51DF7752A00C00F0F /* AttributeStringCreator.m */,
-				6B8C6EB61DF7752A00C00F0F /* AttributeStringHelper.swift */,
-				6B8C6EB71DF7752A00C00F0F /* LabelInformation.swift */,
+				6BFBC4071DFA4A6C005E9CF2 /* AttributeStringCreator.h */,
+				6BFBC4081DFA4A6C005E9CF2 /* AttributeStringCreator.m */,
+				6BFBC4091DFA4A6C005E9CF2 /* AttributeStringHelper.swift */,
+				6BFBC40A1DFA4A6C005E9CF2 /* EXT_String.swift */,
+				6BFBC40B1DFA4A6C005E9CF2 /* LabelInformation.swift */,
 			);
 			path = helper;
+			sourceTree = "<group>";
+		};
+		6BFBC43B1DFB1E16005E9CF2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6BFBC43C1DFB1E1C005E9CF2 /* OverlayPresentationUIViewController.swift */,
+				6BFBC43D1DFB1E1C005E9CF2 /* OverlayPresentationAnimationController.swift */,
+				6BFBC43E1DFB1E1C005E9CF2 /* OverlayPresentationController.swift */,
+				6BFBC43F1DFB1E1C005E9CF2 /* OverlayUINavigationController.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		7BAA57A486CAB2D6E756E59E /* Frameworks */ = {
@@ -272,7 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B8C6E7E1DF7309A00C00F0F /* PodUI.h in Headers */,
-				6B8C6EB81DF7752A00C00F0F /* AttributeStringCreator.h in Headers */,
+				6BFBC40C1DFA4A6C005E9CF2 /* AttributeStringCreator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,25 +575,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B8C6E8F1DF7329000C00F0F /* BaseUIViewDelegate.swift in Sources */,
+				6BFBC41A1DFA5668005E9CF2 /* CardRowView.swift in Sources */,
+				6BFBC4121DFA4AAC005E9CF2 /* ImageLabelRowModel.swift in Sources */,
+				6B8C6EBF1DF776E800C00F0F /* LabelRowModel.swift in Sources */,
 				6B8C6E9A1DF74FFF00C00F0F /* BaseRowViewDelegate.swift in Sources */,
-				6B8C6EB91DF7752A00C00F0F /* AttributeStringCreator.m in Sources */,
+				6BFBC4261DFA9A56005E9CF2 /* BaseUICollectionViewFlowLayout.swift in Sources */,
 				6B8C6EA21DF7509D00C00F0F /* BaseRowTVCellDelegate.swift in Sources */,
-				6B8C6EBA1DF7752A00C00F0F /* AttributeStringHelper.swift in Sources */,
+				6B5575691DF7A6450045F31A /* AsynchronousRowModel.swift in Sources */,
+				6BFBC4341DFAA683005E9CF2 /* ImageLabelRowCVCell.swift in Sources */,
+				6BFBC40E1DFA4A6C005E9CF2 /* AttributeStringHelper.swift in Sources */,
+				6BFBC40F1DFA4A6C005E9CF2 /* EXT_String.swift in Sources */,
+				6BFBC4401DFB1E1C005E9CF2 /* OverlayPresentationUIViewController.swift in Sources */,
+				6BFBC4141DFA4B73005E9CF2 /* ImageLabelRowView.swift in Sources */,
+				6BFBC4411DFB1E1C005E9CF2 /* OverlayPresentationAnimationController.swift in Sources */,
 				6B8C6EA51DF750BC00C00F0F /* BaseRowUITableView.swift in Sources */,
+				6B8C6EC11DF7770C00C00F0F /* LabelRowTVCell.swift in Sources */,
 				6B8C6EA61DF750BC00C00F0F /* BaseRowUITableViewDelegate.swift in Sources */,
 				6B8C6EB31DF7751F00C00F0F /* BaseUILabelDelegate.swift in Sources */,
+				6B5575711DF7A65E0045F31A /* AsynchronousRowTVCell.swift in Sources */,
+				6BFBC42E1DFA9F75005E9CF2 /* BaseRowCVCellDelegate.swift in Sources */,
+				6BFBC4201DFA9179005E9CF2 /* ImageRowView.swift in Sources */,
+				6BFBC4181DFA530A005E9CF2 /* CardRowModel.swift in Sources */,
+				6B55756A1DF7A6450045F31A /* GenericLabelRowModel.swift in Sources */,
+				6BFBC43A1DFAAB0B005E9CF2 /* CarouselRowTVCell.swift in Sources */,
+				6BFBC4381DFAA6C3005E9CF2 /* ImageRowCVCell.swift in Sources */,
+				6BFBC4361DFAA69E005E9CF2 /* CardRowCVCell.swift in Sources */,
+				6BFBC4301DFAA61B005E9CF2 /* GenericLabelRowCVCell.swift in Sources */,
 				6B8C6EB21DF7751F00C00F0F /* BaseUILabel.swift in Sources */,
+				6BFBC4421DFB1E1C005E9CF2 /* OverlayPresentationController.swift in Sources */,
 				6B8C6E9C1DF7501100C00F0F /* BaseRowModel.swift in Sources */,
 				6B8C6E9E1DF7505900C00F0F /* LayoutHelper.swift in Sources */,
+				6BFBC41E1DFA8FC4005E9CF2 /* ImageRowModel.swift in Sources */,
 				6B8C6EA01DF7508500C00F0F /* BaseRowTVCell.swift in Sources */,
+				6B8C6EBD1DF776C600C00F0F /* LabelRowView.swift in Sources */,
+				6BFBC42A1DFA9ABF005E9CF2 /* CarouselRowView.swift in Sources */,
+				6BFBC4241DFA9726005E9CF2 /* CarouselRowModel.swift in Sources */,
+				6BFBC4431DFB1E1C005E9CF2 /* OverlayUINavigationController.swift in Sources */,
 				6B8C6E8A1DF731E800C00F0F /* BaseUIImageView.swift in Sources */,
 				6B8C6E8D1DF7324E00C00F0F /* BaseUIView.swift in Sources */,
+				6BFBC4161DFA4CF3005E9CF2 /* ImageLabelRowTVCell.swift in Sources */,
+				6BFBC42C1DFA9B91005E9CF2 /* BaseRowCVCell.swift in Sources */,
 				6B8C6E991DF74FFF00C00F0F /* BaseRowView.swift in Sources */,
+				6BFBC4221DFA93F9005E9CF2 /* ImageRowTVCell.swift in Sources */,
+				6B55756E1DF7A6520045F31A /* GenericLabelRowView.swift in Sources */,
+				6BFBC40D1DFA4A6C005E9CF2 /* AttributeStringCreator.m in Sources */,
 				6B8C6E911DF733A700C00F0F /* Types.swift in Sources */,
+				6B55756D1DF7A6520045F31A /* AsynchronousRowView.swift in Sources */,
 				6B8C6EAD1DF7662000C00F0F /* BaseTableViewController.swift in Sources */,
 				6B8C6EAC1DF7662000C00F0F /* BaseUINavigationController.swift in Sources */,
 				6B8C6EAB1DF7662000C00F0F /* BaseUIViewController.swift in Sources */,
-				6B8C6EBB1DF7752A00C00F0F /* LabelInformation.swift in Sources */,
+				6B5575721DF7A65E0045F31A /* GenericLabelRowTVCell.swift in Sources */,
+				6BFBC41C1DFA586C005E9CF2 /* CardRowTVCell.swift in Sources */,
+				6BFBC4321DFAA66F005E9CF2 /* LabelRowCVCell.swift in Sources */,
+				6BFBC4101DFA4A6C005E9CF2 /* LabelInformation.swift in Sources */,
+				6BFBC4281DFA9A85005E9CF2 /* BaseUICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
