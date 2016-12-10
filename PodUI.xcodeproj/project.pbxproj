@@ -37,6 +37,7 @@
 		6B8C6EBD1DF776C600C00F0F /* LabelRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EBC1DF776C600C00F0F /* LabelRowView.swift */; };
 		6B8C6EBF1DF776E800C00F0F /* LabelRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EBE1DF776E800C00F0F /* LabelRowModel.swift */; };
 		6B8C6EC11DF7770C00C00F0F /* LabelRowTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EC01DF7770C00C00F0F /* LabelRowTVCell.swift */; };
+		6BB825721DFC941100318A43 /* BaseUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB825711DFC941100318A43 /* BaseUITabBarController.swift */; };
 		6BC52A911DFBF35C00155B9B /* BaseUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC52A901DFBF35C00155B9B /* BaseUITextField.swift */; };
 		6BFBC40C1DFA4A6C005E9CF2 /* AttributeStringCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFBC4071DFA4A6C005E9CF2 /* AttributeStringCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BFBC40D1DFA4A6C005E9CF2 /* AttributeStringCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC4081DFA4A6C005E9CF2 /* AttributeStringCreator.m */; };
@@ -117,6 +118,7 @@
 		6B8C6EBC1DF776C600C00F0F /* LabelRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelRowView.swift; sourceTree = "<group>"; };
 		6B8C6EBE1DF776E800C00F0F /* LabelRowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelRowModel.swift; sourceTree = "<group>"; };
 		6B8C6EC01DF7770C00C00F0F /* LabelRowTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelRowTVCell.swift; sourceTree = "<group>"; };
+		6BB825711DFC941100318A43 /* BaseUITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUITabBarController.swift; sourceTree = "<group>"; };
 		6BC52A901DFBF35C00155B9B /* BaseUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUITextField.swift; sourceTree = "<group>"; };
 		6BFBC4071DFA4A6C005E9CF2 /* AttributeStringCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeStringCreator.h; sourceTree = "<group>"; };
 		6BFBC4081DFA4A6C005E9CF2 /* AttributeStringCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeStringCreator.m; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 				6B8C6EA81DF7662000C00F0F /* BaseUIViewController.swift */,
 				6B8C6EA91DF7662000C00F0F /* BaseUINavigationController.swift */,
 				6B8C6EAA1DF7662000C00F0F /* BaseTableViewController.swift */,
+				6BB825711DFC941100318A43 /* BaseUITabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B8C6E8F1DF7329000C00F0F /* BaseUIViewDelegate.swift in Sources */,
+				6BB825721DFC941100318A43 /* BaseUITabBarController.swift in Sources */,
 				6BFBC41A1DFA5668005E9CF2 /* CardRowView.swift in Sources */,
 				6BFBC4121DFA4AAC005E9CF2 /* ImageLabelRowModel.swift in Sources */,
 				6B8C6EBF1DF776E800C00F0F /* LabelRowModel.swift in Sources */,
