@@ -83,7 +83,7 @@ open class BaseUIView: UIView {
     weak var baseUIViewDelegate: BaseUIViewDelegate?
     
     // MARK: - Touch -
-    var passThroughDefault = false
+    open var passThroughDefault = false
     func forcePassThroughHitTest() -> Bool {
         return passThroughDefault
     }

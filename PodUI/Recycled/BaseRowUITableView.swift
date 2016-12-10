@@ -116,7 +116,6 @@ open class BaseRowUITableView: UITableView, UITableViewDataSource, UITableViewDe
         var cell = tableView.dequeueReusableCell(withIdentifier: BaseRowTVCell.buildReuseIdentifier(id: id, width: width)) as? BaseRowTVCell
         if cell == nil {
             cell = BaseRowTVCell.build(id: model.getId(), width: width)
-            cell!.createLayout()
             cell!.baseRowTVCellDelegate = self
         }
         

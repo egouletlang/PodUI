@@ -8,14 +8,14 @@
 
 import Foundation
 
-class BaseUICollectionView: UICollectionView {
+open class BaseUICollectionView: UICollectionView {
     
-    override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
+    override public init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
         self.__initialize()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -29,7 +29,7 @@ class BaseUICollectionView: UICollectionView {
         }
     }
     
-    override var frame: CGRect {
+    override open var frame: CGRect {
         didSet {
             self.frameDidSet()
         }
@@ -42,7 +42,7 @@ class BaseUICollectionView: UICollectionView {
         }
     }
     
-    func initialize() {}
-    func createAndAddSubviews() {}
-    func frameUpdate() {}
+    open func initialize() {}
+    open func createAndAddSubviews() {}
+    open func frameUpdate() {}
 }

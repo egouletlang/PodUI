@@ -15,6 +15,7 @@ open class BaseRowTVCell: UITableViewCell, BaseRowViewDelegate {
     public init(reuseIdentifier: String) {
         super.init(style: UITableViewCellStyle.default, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = UITableViewCellSelectionStyle.none
+        self.createLayout()
     }
     
     required public init?(coder aDecoder: NSCoder) {

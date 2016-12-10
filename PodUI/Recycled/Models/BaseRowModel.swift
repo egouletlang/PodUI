@@ -14,6 +14,25 @@ private let DEFAULT_PADDING = Rect<CGFloat>(10, 10, 10, 10)
 
 open class BaseRowModel: NSObject {
     
+    open class func build(id: String) -> BaseRowView {
+        if LabelRowModel.isLabelRowModel(id: id) {
+            return LabelRowView(frame: CGRect.zero)
+        } else if AsynchronousRowModel.isAsynchronousRowModel(id: id) {
+            return AsynchronousRowView(frame: CGRect.zero)
+        } else if GenericLabelRowModel.isGenericLabelRowModel(id: id) {
+            return GenericLabelRowView(frame: CGRect.zero)
+        } else if ImageLabelRowModel.isImageLabelRowModel(id: id) {
+            return ImageLabelRowView(frame: CGRect.zero)
+        } else if CardRowModel.isCardRowModel(id: id) {
+            return CardRowView(frame: CGRect.zero)
+        } else if ImageRowModel.isImageRowModel(id: id) {
+            return ImageRowView(frame: CGRect.zero)
+        } else if CarouselRowModel.isCarouselRowModel(id: id) {
+            return CarouselRowView(frame: CGRect.zero)
+        }
+        return BaseRowView(frame: CGRect.zero)
+    }
+    
     // TODO: Remove these trackers eventually.
     private static var count = 0
     open class func increaseTracker() {

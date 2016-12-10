@@ -8,6 +8,6 @@
 
 import Foundation
 
-class BaseUICollectionViewFlowLayout: UICollectionViewFlowLayout {
+open class BaseUICollectionViewFlowLayout: UICollectionViewFlowLayout {
     
 }
