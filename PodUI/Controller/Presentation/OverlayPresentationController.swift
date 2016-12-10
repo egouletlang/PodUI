@@ -111,7 +111,7 @@ class OverlayPresentationController: UIPresentationController, PresentationBackg
                     self.presentingViewController.view.center.y -= 10
                     self.presentingViewController.view.alpha = 0.7
                 }
-                self.blurBackgroundView.alpha = (self.allowVcStackTransition) ? 0.1 : 0.5
+                self.blurBackgroundView.alpha = 0.8
             }, completion:nil)
         }
     }

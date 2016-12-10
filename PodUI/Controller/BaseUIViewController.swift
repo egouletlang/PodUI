@@ -57,7 +57,7 @@ open class BaseUIViewController: UIViewController, BaseUIViewDelegate {
     }
     open var effectiveBottomLayoutGuide: CGFloat {
         get {
-            return self.view.frame.height
+            return self.view.frame.height - keyboardHeight
         }
     }
     open var isPortraitMode: Bool {
@@ -114,7 +114,12 @@ open class BaseUIViewController: UIViewController, BaseUIViewDelegate {
         self.didAppear(first: hasAppearedBefore)
     }
     
-    open func initialize() {}
+    open func initialize() {
+        if shouldRespondToKeyboard() {
+            NotificationCenter.default.addObserver(self, selector: #selector(BaseUIViewController.keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(BaseUIViewController.keyboardWillHide(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        }
+    }
     open func createLayout() {
         layoutCreated = true
     }
@@ -203,5 +208,27 @@ open class BaseUIViewController: UIViewController, BaseUIViewDelegate {
     
     open func addDismissButton() -> Bool {
         return true
+    }
+    
+    open func shouldRespondToKeyboard() -> Bool {
+        return false
+    }
+    
+    
+    open var keyboardHeight: CGFloat = 0
+    open func keyboardWillShow(_ notification: NSNotification) {
+        if let keyboardSize: CGFloat = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.height {
+            keyboardHeight = keyboardSize
+        }
+        UIView.animate(withDuration: 0.3) {
+            self.frameUpdate()
+        }
+    }
+    
+    open func keyboardWillHide(_ notification: NSNotification) {
+        keyboardHeight = 0
+        UIView.animate(withDuration: 0.3) {
+            self.frameUpdate()
+        }
     }
 }
