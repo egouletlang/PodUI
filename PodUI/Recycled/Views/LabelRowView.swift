@@ -106,8 +106,6 @@ open class LabelRowView: BaseRowView {
         let detailsLineHeight = detailsLabel.sizeThatFits(CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)).height
         var detailsSize = detailsLabel.sizeThatFits(CGSize(width: availableDetailsWidth, height: CGFloat.greatestFiniteMagnitude))
         
-        print("\(w) \(titleSize.width) \(subTitleSize.width) \(detailsSize.width)")
-        
         if let m = model as? LabelRowModel {
             titleSize.height = m.titleNumberOfLines > 0 ? (titleLineHeight * CGFloat(m.titleNumberOfLines)) : titleSize.height
             subTitleSize.height = m.subTitleNumberOfLines > 0 ? (subTitleLineHeight * CGFloat(m.subTitleNumberOfLines)) : subTitleSize.height
