@@ -15,6 +15,12 @@ private let BACKGROUND_COLOR = UIColor(rgb: 0xF8F8F8)
 private let LABEL_ROW_ID = "LabelRowModel"
 open class LabelRowModel: BaseRowModel {
     
+    open static let DEFAULT_IOS_ROW_HEIGHT: CGFloat = 50
+    open func withDefaultIOSRowHeight() -> LabelRowModel {
+        self.setHeightTo(height: LabelRowModel.DEFAULT_IOS_ROW_HEIGHT)
+        return self
+    }
+    
     open class func buildSectionTitleRow(
         title: String? = nil,
         titleTextColor: String? = "#7B868C",
