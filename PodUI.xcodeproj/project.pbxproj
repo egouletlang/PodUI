@@ -69,6 +69,10 @@
 		6BFBC4411DFB1E1C005E9CF2 /* OverlayPresentationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC43D1DFB1E1C005E9CF2 /* OverlayPresentationAnimationController.swift */; };
 		6BFBC4421DFB1E1C005E9CF2 /* OverlayPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC43E1DFB1E1C005E9CF2 /* OverlayPresentationController.swift */; };
 		6BFBC4431DFB1E1C005E9CF2 /* OverlayUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBC43F1DFB1E1C005E9CF2 /* OverlayUINavigationController.swift */; };
+		6BFCC9C71E00C5B20037FF1C /* TileRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFCC9C61E00C5B20037FF1C /* TileRowModel.swift */; };
+		6BFCC9C91E00C6380037FF1C /* TileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFCC9C81E00C6380037FF1C /* TileRowView.swift */; };
+		6BFCC9CB1E00C7F00037FF1C /* TileRowCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFCC9CA1E00C7F00037FF1C /* TileRowCVCell.swift */; };
+		6BFCC9CD1E00C8630037FF1C /* BaseUICollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFCC9CC1E00C8630037FF1C /* BaseUICollection.swift */; };
 		99A58E0CFFB0890460645C51 /* Pods_PodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFEEE5442AE92EF97E6955C /* Pods_PodUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +154,10 @@
 		6BFBC43D1DFB1E1C005E9CF2 /* OverlayPresentationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPresentationAnimationController.swift; sourceTree = "<group>"; };
 		6BFBC43E1DFB1E1C005E9CF2 /* OverlayPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPresentationController.swift; sourceTree = "<group>"; };
 		6BFBC43F1DFB1E1C005E9CF2 /* OverlayUINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayUINavigationController.swift; sourceTree = "<group>"; };
+		6BFCC9C61E00C5B20037FF1C /* TileRowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileRowModel.swift; sourceTree = "<group>"; };
+		6BFCC9C81E00C6380037FF1C /* TileRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileRowView.swift; sourceTree = "<group>"; };
+		6BFCC9CA1E00C7F00037FF1C /* TileRowCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileRowCVCell.swift; sourceTree = "<group>"; };
+		6BFCC9CC1E00C8630037FF1C /* BaseUICollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUICollection.swift; sourceTree = "<group>"; };
 		7E27B1AD4AC89E746B25AF8E /* Pods-PodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodUITests/Pods-PodUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D62DB99D7535039717F8C8A4 /* Pods-PodUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodUI/Pods-PodUI.release.xcconfig"; sourceTree = "<group>"; };
 		D932A8F8CCA6DC9F2A7EE52B /* Pods-PodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodUITests/Pods-PodUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -261,6 +269,7 @@
 				6B8C6E941DF74FD100C00F0F /* RecycleViewCells */,
 				6B8C6E951DF74FD100C00F0F /* TableViewCells */,
 				6B8C6E961DF74FD100C00F0F /* Views */,
+				6BFCC9CC1E00C8630037FF1C /* BaseUICollection.swift */,
 			);
 			name = Recycle;
 			path = Recycled;
@@ -277,6 +286,7 @@
 				6BFBC4171DFA530A005E9CF2 /* CardRowModel.swift */,
 				6BFBC41D1DFA8FC4005E9CF2 /* ImageRowModel.swift */,
 				6BFBC4231DFA9726005E9CF2 /* CarouselRowModel.swift */,
+				6BFCC9C61E00C5B20037FF1C /* TileRowModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,6 +301,7 @@
 				6BFBC4331DFAA683005E9CF2 /* ImageLabelRowCVCell.swift */,
 				6BFBC4351DFAA69E005E9CF2 /* CardRowCVCell.swift */,
 				6BFBC4371DFAA6C3005E9CF2 /* ImageRowCVCell.swift */,
+				6BFCC9CA1E00C7F00037FF1C /* TileRowCVCell.swift */,
 			);
 			name = RecycleViewCells;
 			path = RecycleView;
@@ -325,6 +336,7 @@
 				6BFBC4191DFA5668005E9CF2 /* CardRowView.swift */,
 				6BFBC41F1DFA9179005E9CF2 /* ImageRowView.swift */,
 				6BFBC4291DFA9ABF005E9CF2 /* CarouselRowView.swift */,
+				6BFCC9C81E00C6380037FF1C /* TileRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -592,6 +604,7 @@
 				6BB825721DFC941100318A43 /* BaseUITabBarController.swift in Sources */,
 				6BFBC41A1DFA5668005E9CF2 /* CardRowView.swift in Sources */,
 				6BFBC4121DFA4AAC005E9CF2 /* ImageLabelRowModel.swift in Sources */,
+				6BFCC9C71E00C5B20037FF1C /* TileRowModel.swift in Sources */,
 				6B8C6EBF1DF776E800C00F0F /* LabelRowModel.swift in Sources */,
 				6B8C6E9A1DF74FFF00C00F0F /* BaseRowViewDelegate.swift in Sources */,
 				6BFBC4261DFA9A56005E9CF2 /* BaseUICollectionViewFlowLayout.swift in Sources */,
@@ -600,6 +613,7 @@
 				6BFBC4341DFAA683005E9CF2 /* ImageLabelRowCVCell.swift in Sources */,
 				6BFBC40E1DFA4A6C005E9CF2 /* AttributeStringHelper.swift in Sources */,
 				6BFBC40F1DFA4A6C005E9CF2 /* EXT_String.swift in Sources */,
+				6BFCC9CB1E00C7F00037FF1C /* TileRowCVCell.swift in Sources */,
 				6BFBC4401DFB1E1C005E9CF2 /* OverlayPresentationUIViewController.swift in Sources */,
 				6BFBC4141DFA4B73005E9CF2 /* ImageLabelRowView.swift in Sources */,
 				6BFBC4411DFB1E1C005E9CF2 /* OverlayPresentationAnimationController.swift in Sources */,
@@ -613,6 +627,7 @@
 				6BFBC4201DFA9179005E9CF2 /* ImageRowView.swift in Sources */,
 				6BFBC4181DFA530A005E9CF2 /* CardRowModel.swift in Sources */,
 				6B55756A1DF7A6450045F31A /* GenericLabelRowModel.swift in Sources */,
+				6BFCC9C91E00C6380037FF1C /* TileRowView.swift in Sources */,
 				6BFBC43A1DFAAB0B005E9CF2 /* CarouselRowTVCell.swift in Sources */,
 				6BFBC4381DFAA6C3005E9CF2 /* ImageRowCVCell.swift in Sources */,
 				6BFBC4361DFAA69E005E9CF2 /* CardRowCVCell.swift in Sources */,
@@ -622,6 +637,7 @@
 				6B8C6E9C1DF7501100C00F0F /* BaseRowModel.swift in Sources */,
 				6B8C6E9E1DF7505900C00F0F /* LayoutHelper.swift in Sources */,
 				6BFBC41E1DFA8FC4005E9CF2 /* ImageRowModel.swift in Sources */,
+				6BFCC9CD1E00C8630037FF1C /* BaseUICollection.swift in Sources */,
 				6B8C6EA01DF7508500C00F0F /* BaseRowTVCell.swift in Sources */,
 				6B8C6EBD1DF776C600C00F0F /* LabelRowView.swift in Sources */,
 				6BFBC42A1DFA9ABF005E9CF2 /* CarouselRowView.swift in Sources */,

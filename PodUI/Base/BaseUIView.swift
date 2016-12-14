@@ -84,7 +84,7 @@ open class BaseUIView: UIView {
     
     // MARK: - Touch -
     open var passThroughDefault = false
-    func forcePassThroughHitTest() -> Bool {
+    open func forcePassThroughHitTest() -> Bool {
         return passThroughDefault
     }
     override open func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {

@@ -29,6 +29,8 @@ open class BaseRowModel: NSObject {
             return ImageRowView(frame: CGRect.zero)
         } else if CarouselRowModel.isCarouselRowModel(id: id) {
             return CarouselRowView(frame: CGRect.zero)
+        } else if TileRowModel.isTileRowModel(id: id) {
+            return TileRowView(frame: CGRect.zero)
         }
         return BaseRowView(frame: CGRect.zero)
     }
@@ -189,8 +191,26 @@ open class BaseRowModel: NSObject {
     }
     
     // MARK: - Height -
-    open var height: CGFloat = 0
+    open var size = CGSize.zero
+    open var height: CGFloat {
+        get {
+            return self.size.height
+        }
+        set {
+            self.size.height = newValue
+        }
+    }
+    open var width: CGFloat {
+        get {
+            return self.size.width
+        }
+        set {
+            self.size.width = newValue
+        }
+    }
+    
     open var measureHeight = true
+    open var measureWidth = true
     open func withHeight(height: CGFloat) -> BaseRowModel {
         self.setHeightTo(height: height)
         return self
@@ -199,6 +219,27 @@ open class BaseRowModel: NSObject {
         self.height = height
         self.measureHeight = false
     }
+    
+    open func withWidth(width: CGFloat) -> BaseRowModel {
+        self.setWidthTo(width: width)
+        return self
+    }
+    open func setWidthTo(width: CGFloat) {
+        self.width = width
+        self.measureWidth = false
+    }
+    
+    
+    open func withSize(size: CGSize) -> BaseRowModel {
+        self.setSizeTo(size: size)
+        return self
+    }
+    open func setSizeTo(size: CGSize) {
+        self.size = size
+        self.measureWidth = false
+        self.measureHeight = false
+    }
+    
     
     // MARK: - Tag -
     open var tag: String?

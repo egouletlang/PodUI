@@ -52,7 +52,7 @@ open class BaseUIViewController: UIViewController, BaseUIViewDelegate {
     }
     open var effectiveTopLayoutGuide: CGFloat {
         get {
-            return navBarHeight + statusBarHeight
+            return (self.navigationController != nil) ? (navBarHeight + statusBarHeight) : 0
         }
     }
     open var effectiveBottomLayoutGuide: CGFloat {

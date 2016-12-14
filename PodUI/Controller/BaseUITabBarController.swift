@@ -63,6 +63,9 @@ open class BaseUITabBarController: UITabBarController, UITabBarControllerDelegat
     open func getTintColor() -> UIColor {
         return UIColor(argb: 0xA0A0A0)
     }
+    open func getInactiveColor() -> UIColor {
+        return UIColor(rgb: 0x7B868C)
+    }
     
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -72,13 +75,14 @@ open class BaseUITabBarController: UITabBarController, UITabBarControllerDelegat
         self.tabBar.barStyle = UIBarStyle.default
         self.tabBar.isTranslucent = false
         self.tabBar.tintColor = self.getTintColor()
+        self.tabBar.unselectedItemTintColor = self.getInactiveColor()
         createLayout()
     }
     
     
     
     
-    func resizeImage(imageName: String) -> UIImage? {
+    private func resizeImage(imageName: String) -> UIImage? {
         let image = UIImage(named: imageName)!
         UIGraphicsBeginImageContextWithOptions(CGSize(width: 25, height: 25), false, 0.0)
         image.draw(in: CGRect(x: 0, y: 0, width: 25, height: 25))
@@ -87,12 +91,12 @@ open class BaseUITabBarController: UITabBarController, UITabBarControllerDelegat
         return ret;
     }
     
-    func createTabItem(title: String) -> UITabBarItem {
+    open func createTabItem(title: String) -> UITabBarItem {
         let tab = UITabBarItem()
         tab.title = title
         tab.setTitleTextAttributes([
             NSFontAttributeName: UIFont.systemFont(ofSize: 18),
-            NSForegroundColorAttributeName: self.getTintColor()
+            NSForegroundColorAttributeName: self.getInactiveColor()
             ], for: UIControlState.normal)
         tab.setTitleTextAttributes([
             NSFontAttributeName: UIFont.systemFont(ofSize: 18),
@@ -102,27 +106,14 @@ open class BaseUITabBarController: UITabBarController, UITabBarControllerDelegat
         return tab
     }
     
-    func createTabItem(active: String, inactive: String) -> UITabBarItem {
-        let tab = UITabBarItem()
-        tab.title = ""
-        tab.image = resizeImage(imageName: inactive)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        tab.selectedImage = resizeImage(imageName: active)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        tab.imageInsets = UIEdgeInsets(top: 9, left: 0, bottom: -9, right: 0)
-        tab.setTitleTextAttributes([
-            NSFontAttributeName: UIFont.systemFont(ofSize: 8),
-            NSForegroundColorAttributeName: UIColor.clear
-            ], for: UIControlState.normal)
-        return tab
-    }
-    
-    func createTabItem(title: String, active: String, inactive: String) -> UITabBarItem {
+    open func createTabItem(title: String, active: String, inactive: String) -> UITabBarItem {
         let tab = UITabBarItem()
         tab.title = title
         tab.image = UIImage(named: inactive)
         tab.selectedImage = UIImage(named: active)
         tab.setTitleTextAttributes([
             NSFontAttributeName: UIFont.systemFont(ofSize: 10),
-            NSForegroundColorAttributeName: UIColor(rgb: 0x7B868C)
+            NSForegroundColorAttributeName: self.getInactiveColor()
             ], for: UIControlState.normal)
         tab.setTitleTextAttributes([
             NSFontAttributeName: UIFont.systemFont(ofSize: 10),

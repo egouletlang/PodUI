@@ -8,7 +8,7 @@
 
 import Foundation
 
-open  class CardRowView: BaseRowView {
+open class CardRowView: BaseRowView {
     
     let imageView = BaseUIImageView(frame: CGRect.zero)
     let labelView = LabelRowView(frame: CGRect.zero)
