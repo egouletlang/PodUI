@@ -15,7 +15,9 @@ private let DEFAULT_INSETS = UIEdgeInsetsMake(7, 7, 7, 7)
 open class BaseUICollection: BaseUIView, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, BaseRowCVCellDelegate
 {
     
-    private var collectionView: BaseUICollectionView!
+    open weak var baseUICollectionDelegate: BaseUICollectionDelegate?
+    
+    open var collectionView: BaseUICollectionView!
     private var allModels = [BaseRowModel]()
     private var filteredModels = [BaseRowModel]()
     
@@ -117,8 +119,12 @@ open class BaseUICollection: BaseUIView, UICollectionViewDataSource, UICollectio
     }
     
     public func active(view: BaseRowView) {}
-    public func tapped(model: BaseRowModel, view: BaseRowView) {}
-    public func longPressed(model: BaseRowModel, view: BaseRowView) {}
+    public func tapped(model: BaseRowModel, view: BaseRowView) {
+        self.baseUICollectionDelegate?.tapped(model: model, view: view)
+    }
+    public func longPressed(model: BaseRowModel, view: BaseRowView) {
+        self.baseUICollectionDelegate?.longPressed(model: model, view: view)
+    }
     public func submitArgsValidityChanged(valid: Bool) {}
     public func submitArgsChanged() {}
     

@@ -73,6 +73,8 @@
 		6BFCC9C91E00C6380037FF1C /* TileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFCC9C81E00C6380037FF1C /* TileRowView.swift */; };
 		6BFCC9CB1E00C7F00037FF1C /* TileRowCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFCC9CA1E00C7F00037FF1C /* TileRowCVCell.swift */; };
 		6BFCC9CD1E00C8630037FF1C /* BaseUICollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFCC9CC1E00C8630037FF1C /* BaseUICollection.swift */; };
+		6BFCCA091E00D44C0037FF1C /* BaseUICollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFCCA081E00D44C0037FF1C /* BaseUICollectionDelegate.swift */; };
+		6BFCCA0B1E00D55A0037FF1C /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFCCA0A1E00D55A0037FF1C /* BaseCollectionViewController.swift */; };
 		99A58E0CFFB0890460645C51 /* Pods_PodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFEEE5442AE92EF97E6955C /* Pods_PodUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +160,8 @@
 		6BFCC9C81E00C6380037FF1C /* TileRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileRowView.swift; sourceTree = "<group>"; };
 		6BFCC9CA1E00C7F00037FF1C /* TileRowCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileRowCVCell.swift; sourceTree = "<group>"; };
 		6BFCC9CC1E00C8630037FF1C /* BaseUICollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUICollection.swift; sourceTree = "<group>"; };
+		6BFCCA081E00D44C0037FF1C /* BaseUICollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUICollectionDelegate.swift; sourceTree = "<group>"; };
+		6BFCCA0A1E00D55A0037FF1C /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
 		7E27B1AD4AC89E746B25AF8E /* Pods-PodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodUITests/Pods-PodUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D62DB99D7535039717F8C8A4 /* Pods-PodUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodUI/Pods-PodUI.release.xcconfig"; sourceTree = "<group>"; };
 		D932A8F8CCA6DC9F2A7EE52B /* Pods-PodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodUITests/Pods-PodUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -261,6 +265,8 @@
 		6B8C6E921DF74FD100C00F0F /* Recycle */ = {
 			isa = PBXGroup;
 			children = (
+				6BFCC9CC1E00C8630037FF1C /* BaseUICollection.swift */,
+				6BFCCA081E00D44C0037FF1C /* BaseUICollectionDelegate.swift */,
 				6BFBC4271DFA9A85005E9CF2 /* BaseUICollectionView.swift */,
 				6BFBC4251DFA9A56005E9CF2 /* BaseUICollectionViewFlowLayout.swift */,
 				6B8C6EA31DF750BC00C00F0F /* BaseRowUITableView.swift */,
@@ -269,7 +275,6 @@
 				6B8C6E941DF74FD100C00F0F /* RecycleViewCells */,
 				6B8C6E951DF74FD100C00F0F /* TableViewCells */,
 				6B8C6E961DF74FD100C00F0F /* Views */,
-				6BFCC9CC1E00C8630037FF1C /* BaseUICollection.swift */,
 			);
 			name = Recycle;
 			path = Recycled;
@@ -349,6 +354,7 @@
 				6B8C6EA91DF7662000C00F0F /* BaseUINavigationController.swift */,
 				6B8C6EAA1DF7662000C00F0F /* BaseTableViewController.swift */,
 				6BB825711DFC941100318A43 /* BaseUITabBarController.swift */,
+				6BFCCA0A1E00D55A0037FF1C /* BaseCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -618,9 +624,11 @@
 				6BFBC4141DFA4B73005E9CF2 /* ImageLabelRowView.swift in Sources */,
 				6BFBC4411DFB1E1C005E9CF2 /* OverlayPresentationAnimationController.swift in Sources */,
 				6B8C6EA51DF750BC00C00F0F /* BaseRowUITableView.swift in Sources */,
+				6BFCCA0B1E00D55A0037FF1C /* BaseCollectionViewController.swift in Sources */,
 				6B8C6EC11DF7770C00C00F0F /* LabelRowTVCell.swift in Sources */,
 				6B8C6EA61DF750BC00C00F0F /* BaseRowUITableViewDelegate.swift in Sources */,
 				6B8C6EB31DF7751F00C00F0F /* BaseUILabelDelegate.swift in Sources */,
+				6BFCCA091E00D44C0037FF1C /* BaseUICollectionDelegate.swift in Sources */,
 				6BC52A911DFBF35C00155B9B /* BaseUITextField.swift in Sources */,
 				6B5575711DF7A65E0045F31A /* AsynchronousRowTVCell.swift in Sources */,
 				6BFBC42E1DFA9F75005E9CF2 /* BaseRowCVCellDelegate.swift in Sources */,
