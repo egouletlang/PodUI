@@ -9,7 +9,7 @@
 import Foundation
 
 private let ID = "TileRowModel"
-class TileRowModel: LabelRowModel {
+open class TileRowModel: LabelRowModel {
     
     override open func getId() -> String {
         return ID
@@ -21,6 +21,7 @@ class TileRowModel: LabelRowModel {
     
     override public init() {
         super.init()
+        self.padding = Rect<CGFloat>(0, 0, 0, 0)
         self.titleNumberOfLines = 1
         self.subTitleNumberOfLines = 1
         self.detailsNumberOfLines = 1

@@ -137,47 +137,12 @@ open class BaseRowModel: NSObject {
     // MARK: - Padding -
     open var padding = DEFAULT_PADDING
     open func withPadding(l: CGFloat? = nil, t: CGFloat? = nil, r: CGFloat? = nil, b: CGFloat? = nil) -> BaseRowModel {
-        self.setLeftPaddingTo(l: l)
-        self.setTopPaddingTo(t: t)
-        self.setRightPaddingTo(r: r)
-        self.setBottomPaddingTo(b: b)
+        self.padding = Rect<CGFloat>(
+                            l ?? DEFAULT_PADDING.left,
+                            t ?? DEFAULT_PADDING.top,
+                            r ?? DEFAULT_PADDING.right,
+                            b ?? DEFAULT_PADDING.bottom)
         return self
-    }
-    open func withLeftPadding(l: CGFloat?) -> BaseRowModel {
-        self.setLeftPaddingTo(l: l)
-        return self
-    }
-    open func withTopPadding(t: CGFloat?) -> BaseRowModel {
-        self.setTopPaddingTo(t: t)
-        return self
-    }
-    open func withRightPadding(r: CGFloat?) -> BaseRowModel {
-        self.setRightPaddingTo(r: r)
-        return self
-    }
-    open func withBottomPadding(b: CGFloat?) -> BaseRowModel {
-        self.setBottomPaddingTo(b: b)
-        return self
-    }
-    open func setLeftPaddingTo(l: CGFloat?) {
-        if let left = l {
-            self.padding.left = left
-        }
-    }
-    open func setTopPaddingTo(t: CGFloat?) {
-        if let top = t {
-            self.padding.top = top
-        }
-    }
-    open func setRightPaddingTo(r: CGFloat?) {
-        if let right = r {
-            self.padding.right = right
-        }
-    }
-    open func setBottomPaddingTo(b: CGFloat?) {
-        if let bottom = b {
-            self.padding.bottom = bottom
-        }
     }
     
     // MARK: - Background Color -

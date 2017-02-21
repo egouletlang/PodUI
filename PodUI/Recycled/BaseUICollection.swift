@@ -55,7 +55,7 @@ open class BaseUICollection: BaseUIView, UICollectionViewDataSource, UICollectio
     
     //CONFIG
     open func getBackgroundColor() -> UIColor {
-        return UIColor(argb: 0xAAAAAA)
+        return UIColor(argb: 0xF8F8F8)
     }
     open func getLineSpacing() -> CGFloat {
         return 10
@@ -64,7 +64,7 @@ open class BaseUICollection: BaseUIView, UICollectionViewDataSource, UICollectio
         return 10
     }
     open func getScrollDirection() -> UICollectionViewScrollDirection {
-        return .horizontal
+        return .vertical
     }
     open func getCellsToRegister() -> [(Swift.AnyClass?, String)] {
         return [

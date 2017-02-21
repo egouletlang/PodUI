@@ -9,7 +9,7 @@
 import Foundation
 
 private let D_CORNER_RADIUS: CGFloat = 2
-private let D_MIN_BORDER_SIZE = CGSize(width: 0, height: 20)
+private let D_MIN_BORDER_SIZE = CGSize(width: 0, height: 0)
 
 protocol PresentationBackgroundBlurDelegate: NSObjectProtocol {
     func dimTapped()

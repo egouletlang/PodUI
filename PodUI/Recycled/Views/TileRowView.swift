@@ -29,19 +29,18 @@ open class TileRowView: BaseRowView {
     override open func frameUpdate() {
         super.frameUpdate()
         
-        let imageHeight = self.frame.height - LABEL_HEIGHT - PADDING
-        
+        let imageHeight = self.frame.height - LABEL_HEIGHT - 3 * PADDING
         
         self.imageView.frame = CGRect(
-            x: 0,
-            y: 0,
-            width: self.contentView.bounds.width,
+            x: PADDING,
+            y: PADDING,
+            width: self.contentView.bounds.width - 2 * PADDING,
             height: imageHeight)
         
         self.labelView.frame = CGRect(
-            x: 0,
-            y: imageHeight + PADDING,
-            width: self.contentView.bounds.width,
+            x: PADDING,
+            y: PADDING + imageHeight + PADDING,
+            width: self.contentView.bounds.width - 2 * PADDING,
             height: LABEL_HEIGHT)
     }
     
@@ -59,7 +58,7 @@ open class TileRowView: BaseRowView {
     
     override open func getDesiredSize(model: BaseRowModel, forWidth w: CGFloat) -> CGSize {
         
-        return CGSize(width: DESIRED_IMAGE_HEIGHT, height: DESIRED_IMAGE_HEIGHT + PADDING + LABEL_HEIGHT)
+        return CGSize(width: DESIRED_IMAGE_HEIGHT + 2 * PADDING, height: DESIRED_IMAGE_HEIGHT + 3 * PADDING + LABEL_HEIGHT)
         
     }
     

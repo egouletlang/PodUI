@@ -57,7 +57,8 @@ open class BaseUIViewController: UIViewController, BaseUIViewDelegate {
     }
     open var effectiveBottomLayoutGuide: CGFloat {
         get {
-            return self.view.frame.height - keyboardHeight
+            let diff = UIScreen.main.bounds.height - self.view.frame.height
+            return self.view.frame.height - keyboardHeight + (keyboardHeight == 0 ? 0 : diff)
         }
     }
     open var isPortraitMode: Bool {

@@ -15,6 +15,13 @@ import BaseUtils
 
 open class BaseTableViewController: BaseUIViewController, BaseRowUITableViewDelegate, UISearchControllerDelegate, UISearchBarDelegate, UISearchResultsUpdating {
     
+    convenience public init(models: [BaseRowModel]) {
+        self.init()
+        self.initialModels = models
+    }
+    
+    private var initialModels = [BaseRowModel]()
+    
     public let tableView = BaseRowUITableView(frame: CGRect.zero)
     private let searchController = UISearchController(searchResultsController: nil)
     private var searchMode = false
@@ -53,7 +60,7 @@ open class BaseTableViewController: BaseUIViewController, BaseRowUITableViewDele
     }
     
     open func createModels() -> [BaseRowModel] {
-        return []
+        return self.initialModels
     }
     
     open func tapped(model: BaseRowModel, view: BaseRowView) {}
@@ -96,7 +103,7 @@ open class BaseTableViewController: BaseUIViewController, BaseRowUITableViewDele
     }
     
     open func addSearchBarHeader() -> Bool {
-        return true
+        return false
     }
     
     private func _getScopes() -> [String]? {
