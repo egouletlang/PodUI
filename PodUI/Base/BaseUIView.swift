@@ -35,7 +35,7 @@ open class BaseUIView: UIView {
         self.__initialize()
     }
     
-    public init(config: BaseUIViewConfig) {
+    public init(config: BaseUIViewConfig?) {
         super.init(frame: CGRect.zero)
         self.config = config
         self.__initialize()
