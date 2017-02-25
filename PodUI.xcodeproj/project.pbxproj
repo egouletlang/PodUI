@@ -472,7 +472,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Etienne Goulet-Lang";
 				TargetAttributes = {
 					6B8C6E6C1DF7309A00C00F0F = {

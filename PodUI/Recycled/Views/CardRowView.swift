@@ -41,7 +41,7 @@ open class CardRowView: BaseRowView {
         buttonContainer.passThroughDefault = true
         self.contentView.addSubview(buttonContainer)
         
-        for i in stride(from: 0, through: MAX_BUTTON_COUNT - 1, by: 1) {
+        for _ in stride(from: 0, through: MAX_BUTTON_COUNT - 1, by: 1) {
             let button = LabelRowView(frame: CGRect.zero)
             button.layer.cornerRadius = 8
             self.buttonContainer.addSubview(button)
