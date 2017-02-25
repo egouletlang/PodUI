@@ -19,7 +19,7 @@ open class BaseUIView: UIView {
         mayResign = false
     }
     
-    func setAllowResign() {
+    open func setAllowResign() {
         mayResign = true
     }
     
@@ -80,7 +80,7 @@ open class BaseUIView: UIView {
     }
     
     // MARK: - View Controller Functionality Delegate -
-    weak var baseUIViewDelegate: BaseUIViewDelegate?
+    open weak var baseUIViewDelegate: BaseUIViewDelegate?
     
     // MARK: - Touch -
     open var passThroughDefault = false

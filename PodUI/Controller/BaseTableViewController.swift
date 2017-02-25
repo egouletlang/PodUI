@@ -84,17 +84,17 @@ open class BaseTableViewController: BaseUIViewController, BaseRowUITableViewDele
     }
     
     // MARK: - Search Bar Delegate -
-    public func updateSearchResults(for searchController: UISearchController) {
+    open func updateSearchResults(for searchController: UISearchController) {
         let index = searchController.searchBar.selectedScopeButtonIndex
         filterContentForSearchText(scope: searchController.searchBar.scopeButtonTitles?[index], text: searchController.searchBar.text)
     }
-    public func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+    open func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         filterContentForSearchText(scope: searchBar.scopeButtonTitles?[selectedScope], text: searchBar.text)
     }
-    public func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+    open func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         self.frameUpdate()
     }
-    public func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+    open func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         self.frameUpdate()
     }
     

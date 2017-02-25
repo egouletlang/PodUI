@@ -85,6 +85,18 @@ open class LabelRowModel: BaseRowModel {
         return self
     }
     
+    
+    open var cornerRadius: CGFloat = 0
+    open func withCornerRadius(radius: CGFloat) -> LabelRowModel {
+        self.setCornerRadiusTo(radius: radius)
+        return self
+    }
+    
+    open func setCornerRadiusTo(radius: CGFloat) {
+        self.cornerRadius = radius
+    }
+    
+    
     // MARK: - Title Label -
     open var title = LabelInformation()
     open var titleNumberOfLines = 0
