@@ -80,7 +80,13 @@ open class BaseUIView: UIView {
     }
     
     // MARK: - View Controller Functionality Delegate -
-    open weak var baseUIViewDelegate: BaseUIViewDelegate?
+    open weak var baseUIViewDelegate: BaseUIViewDelegate? {
+        didSet {
+            for subview in self.subviews {
+                (subview as? BaseUIView)?.baseUIViewDelegate = self.baseUIViewDelegate
+            }
+        }
+    }
     
     // MARK: - Touch -
     open var passThroughDefault = false
