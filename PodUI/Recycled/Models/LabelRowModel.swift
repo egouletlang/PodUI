@@ -37,7 +37,7 @@ open class LabelRowModel: BaseRowModel {
         return LabelRowModel()
             .withTitle(str: formattedTitle, textSize: 12)
             .withHeight(height: height)
-            .withPadding(l: 15, t: 15, b: 0)
+            .withPadding(l: 15, t: height - 5, b: 0)
             .withBorders(t: topBorder, b: bottomBorder)
             .withBackgroundColor(color: BACKGROUND_COLOR) as! LabelRowModel
     }
@@ -59,7 +59,7 @@ open class LabelRowModel: BaseRowModel {
             .declareIsFooter()
             .withTitle(str: formattedTitle, textSize: 12)
             .withHeight(height: height)
-            .withPadding(l: 15, t: 0, b: 15)
+            .withPadding(l: 15, t: 0, b: height - 5)
             .withBorders(t: topBorder, b: bottomBorder)
             .withBackgroundColor(color: BACKGROUND_COLOR) as! LabelRowModel
     }
