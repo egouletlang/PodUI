@@ -38,6 +38,8 @@
 		6B8C6EBD1DF776C600C00F0F /* LabelRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EBC1DF776C600C00F0F /* LabelRowView.swift */; };
 		6B8C6EBF1DF776E800C00F0F /* LabelRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EBE1DF776E800C00F0F /* LabelRowModel.swift */; };
 		6B8C6EC11DF7770C00C00F0F /* LabelRowTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C6EC01DF7770C00C00F0F /* LabelRowTVCell.swift */; };
+		6BA5D7901E67731300A93C10 /* BaseUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5D78E1E67731300A93C10 /* BaseUIWebView.swift */; };
+		6BA5D7911E67731300A93C10 /* BaseWKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5D78F1E67731300A93C10 /* BaseWKWebView.swift */; };
 		6BB825721DFC941100318A43 /* BaseUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB825711DFC941100318A43 /* BaseUITabBarController.swift */; };
 		6BC52A911DFBF35C00155B9B /* BaseUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC52A901DFBF35C00155B9B /* BaseUITextField.swift */; };
 		6BFBC40C1DFA4A6C005E9CF2 /* AttributeStringCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFBC4071DFA4A6C005E9CF2 /* AttributeStringCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -126,6 +128,8 @@
 		6B8C6EBC1DF776C600C00F0F /* LabelRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelRowView.swift; sourceTree = "<group>"; };
 		6B8C6EBE1DF776E800C00F0F /* LabelRowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelRowModel.swift; sourceTree = "<group>"; };
 		6B8C6EC01DF7770C00C00F0F /* LabelRowTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelRowTVCell.swift; sourceTree = "<group>"; };
+		6BA5D78E1E67731300A93C10 /* BaseUIWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIWebView.swift; sourceTree = "<group>"; };
+		6BA5D78F1E67731300A93C10 /* BaseWKWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWKWebView.swift; sourceTree = "<group>"; };
 		6BB825711DFC941100318A43 /* BaseUITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUITabBarController.swift; sourceTree = "<group>"; };
 		6BC52A901DFBF35C00155B9B /* BaseUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUITextField.swift; sourceTree = "<group>"; };
 		6BFBC4071DFA4A6C005E9CF2 /* AttributeStringCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeStringCreator.h; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 		6B8C6E6F1DF7309A00C00F0F /* PodUI */ = {
 			isa = PBXGroup;
 			children = (
+				6BA5D78D1E67729C00A93C10 /* Web */,
 				6BC52A8F1DFBF34700155B9B /* Input */,
 				6B8C6EAE1DF7750C00C00F0F /* Label */,
 				6B8C6EA71DF7660B00C00F0F /* Controller */,
@@ -370,6 +375,15 @@
 				6BFBC4061DFA4A6C005E9CF2 /* helper */,
 			);
 			path = Label;
+			sourceTree = "<group>";
+		};
+		6BA5D78D1E67729C00A93C10 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				6BA5D78E1E67731300A93C10 /* BaseUIWebView.swift */,
+				6BA5D78F1E67731300A93C10 /* BaseWKWebView.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 		6BC52A8F1DFBF34700155B9B /* Input */ = {
@@ -609,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BA5D7901E67731300A93C10 /* BaseUIWebView.swift in Sources */,
 				6B8C6E8F1DF7329000C00F0F /* BaseUIViewDelegate.swift in Sources */,
 				6BB825721DFC941100318A43 /* BaseUITabBarController.swift in Sources */,
 				6BFBC41A1DFA5668005E9CF2 /* CardRowView.swift in Sources */,
@@ -654,6 +669,7 @@
 				6BFBC42A1DFA9ABF005E9CF2 /* CarouselRowView.swift in Sources */,
 				6BFBC4241DFA9726005E9CF2 /* CarouselRowModel.swift in Sources */,
 				6BFBC4431DFB1E1C005E9CF2 /* OverlayUINavigationController.swift in Sources */,
+				6BA5D7911E67731300A93C10 /* BaseWKWebView.swift in Sources */,
 				6B8C6E8A1DF731E800C00F0F /* BaseUIImageView.swift in Sources */,
 				6B8C6E8D1DF7324E00C00F0F /* BaseUIView.swift in Sources */,
 				6BFBC4161DFA4CF3005E9CF2 /* ImageLabelRowTVCell.swift in Sources */,
