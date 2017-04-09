@@ -175,7 +175,8 @@ open class BaseRowView: BaseUIView {
             maxSwipeX = CGFloat(swipeModels.count) * DELETE_CONTAINER_WIDTH +
                         CGFloat((swipeModels.count - 1) * 10)
             
-            for var i in (0..<3) {
+            var i = 0
+            while (i < 3) {
                 if let m = swipeModels.get(i) {
                     deleteContainers.get(i)?.backgroundColor = m.color
                     deleteContainers.get(i)?.labelInformation = m.title
@@ -183,6 +184,7 @@ open class BaseRowView: BaseUIView {
                 } else {
                     deleteContainers.get(i)?.isHidden = true
                 }
+                i += 1
             }
             
         } else {

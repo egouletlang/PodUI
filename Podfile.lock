@@ -1,6 +1,6 @@
 PODS:
-  - BaseUtils (1.0.27)
-  - PodImage (1.0.14):
+  - BaseUtils (1.0.41)
+  - PodImage (1.0.24):
     - BaseUtils
 
 DEPENDENCIES:
@@ -8,8 +8,8 @@ DEPENDENCIES:
   - PodImage
 
 SPEC CHECKSUMS:
-  BaseUtils: 1a259c2b482ccd07459c819344abd9ab71d05652
-  PodImage: 1c553db71a279c39791d5be20e9d243cef10e518
+  BaseUtils: 61e722e559d29833b2d1712902581de43ae4c48c
+  PodImage: 644aafafcfd4849332800a530e423206f3b4ea70
 
 PODFILE CHECKSUM: 75746123f4e90b783d8bb0d5c709ad519789c944
 
